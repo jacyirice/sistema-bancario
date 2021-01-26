@@ -1,5 +1,6 @@
 package com.sistemabancario.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -60,7 +61,7 @@ public class Conta implements Cadastro {
      * conta usando qualquer um dos construtores, a lista de movimentações não é
      * nula, chamando o método {@link #getMovimentacoes()}. (R04)
      */
-    private List<Movimentacao> movimentacoes;
+    private List<Movimentacao> movimentacoes = new ArrayList<>();
 
     public Conta() {
         // TODO: Você precisa implementar este método
@@ -164,6 +165,12 @@ public class Conta implements Cadastro {
     }
 
     public void setNumero(String numero) {
+        if (!numero.matches("\\d{5}-\\d")){
+            throw new IllegalArgumentException("Número inválido. Deve estar no formato 99999-9");
+        }
+        if (numero == null) {
+            throw new NullPointerException("Número nulo inválido");
+        }
         this.numero = numero;
     }
 
