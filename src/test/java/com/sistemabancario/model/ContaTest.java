@@ -25,6 +25,32 @@ public class ContaTest {
         assertNotEquals(invalido,obtido);
     }
     
+    //R02
+    @Test
+    void testInstanciaPadraoPoupanca() {
+        final Conta instance = new Conta();
+        assertFalse(instance.isPoupanca());
+    }
+    
+    //R03
+    @Test
+    void testSetLimiteContaEspecial() {
+        final Conta instance = new Conta();
+        instance.setEspecial(true);
+        final double esperado = 1000;
+        instance.setLimite(esperado);
+        final double obtido = instance.getLimite();
+        assertEquals(esperado, obtido);
+    }
+    
+    //R03
+    @Test
+    void testSetLimiteContaNaoEspecial() {
+        final Conta instance = new Conta();
+        final double limite = 1000;
+        assertThrows(IllegalArgumentException.class, () -> instance.setLimite(limite));
+    }
+    
     //R04
     @Test
     void testHistoricoNotNull() {

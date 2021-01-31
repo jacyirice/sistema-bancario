@@ -199,6 +199,9 @@ public class Conta implements Cadastro {
     }
 
     public void setLimite(double limite) {
+        if (!especial && limite > 0) {
+            throw new IllegalArgumentException("Somente contas especiais podem ter limite.");
+        }
         this.limite = limite;
     }
 }
