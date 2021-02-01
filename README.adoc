@@ -52,6 +52,6 @@ você deverá renomear as pastas para algo como (preferencialmente evitando acen
 ====
 
 == Relatorio
-image::[https://raw.githubusercontent.com/jacyirice/sistema-bancario/master/relatorio2.png]
+image::https://raw.githubusercontent.com/jacyirice/sistema-bancario/master/relatorio2.png[]
 
 
