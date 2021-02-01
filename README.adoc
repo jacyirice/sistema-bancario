@@ -50,3 +50,8 @@ você deverá renomear as pastas para algo como (preferencialmente evitando acen
 
 `/home/usuario/meus-projetos/projeto-incrivel`.
 ====
+
+== Relatorio
+image::[https://raw.githubusercontent.com/jacyirice/sistema-bancario/master/relatorio2.png]
+
+
