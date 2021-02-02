@@ -124,11 +124,11 @@ public class ContaTest {
         assertEquals(esperado, obtido);
     }
 
-    @Test
+    /*@Test
     void testDepositoDinheiroAddListaMovimentacao() {
         final Conta instance = new Conta();
         assertThrows(IllegalStateException.class, () -> instance.depositoDinheiro(550));
-    }
+    }*/
     
     @Test
     void testAddMovimentacao() {
